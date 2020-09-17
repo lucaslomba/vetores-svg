@@ -47,5 +47,38 @@
         <path d="M150 0 L75 200 L225 200 Z"></path>
     </svg>
 
+    <!--
+    M = move até
+    L = linha até
+    H = linha horizontal até
+    V = linha vertical até
+    C = curva até
+    S = curva suave até
+    Q = curva de Bézier
+    T = curva de Bézier suave
+    A = arco elíptico
+    Z = fecha path 
+
+    A versão maiúscula se refere a coordenadas absolutas 
+    e a versão minúscula a coordenadas relativas.
+    -->
+
+    <!-- bolinha animação -->
+
+    <svg width="200" height="200">
+        <style>
+         .bolinha {
+                animation: loopBolinha 1s ease-in-out infinite alternate;
+              }
+       
+          @keyframes loopBolinha {
+                to {
+                  transform: translate(40px);
+                }
+              }
+        </style>
+       
+        <circle class="bolinha" cx="100" cy="100" r="40" fill="red" />
+    </svg>
 </body>
 </html>
