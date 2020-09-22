@@ -80,5 +80,30 @@
        
         <circle class="bolinha" cx="100" cy="100" r="40" fill="red" />
     </svg>
+
+    <!-- Triangulo animacção -->
+
+    <svg width="500" height="210">
+        <style>
+          #teste {
+            fill: none;
+            stroke: blue;
+            stroke-width: 5px;
+            stroke-dasharray: 100;
+            animation: loader 2.5s linear infinite;
+          }
+       
+          @keyframes loader {
+            0% {
+              stroke-dashoffset: 0;
+            }
+            100% {
+              stroke-dashoffset: 1000;
+            }
+          }
+       
+        </style>
+        <polygon id="teste" points="200,0 300,200 100,200"/>
+    </svg>
 </body>
 </html>
